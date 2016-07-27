@@ -1,1 +1,1 @@
-web: bin/testin
+web: testin
