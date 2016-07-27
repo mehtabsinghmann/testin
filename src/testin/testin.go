@@ -13,7 +13,7 @@ func handler(responseWriter http.ResponseWriter, request *http.Request) {
 	http.Error(responseWriter, fmt.Sprint(err), http.StatusInternalServerError)
 	return
     }    
-    fmt.Printf("%q",dump)
+    fmt.Fprintf("%q",dump)
     fmt.Fprintf(responseWriter, "OK")
 }
 
